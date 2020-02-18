@@ -24,6 +24,15 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         visitCollectionView.delegate = self
         customTableView.delegate = self
         customTableView.dataSource = self
+        //customTableView.alpha = 0.7
+        
+        
+        customTableView.layer.shadowOpacity = 1.0
+        customTableView.layer.shadowRadius = 4
+        customTableView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        customTableView.layer.shadowColor = UIColor.gray.cgColor
+
+       // addShadow()
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filename.count
@@ -45,7 +54,7 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
         let flowLayout = collectionViewLayout as! UICollectionViewFlowLayout
         
         let totalSpace = flowLayout.sectionInset.left
-            + flowLayout.sectionInset.right
+            + flowLayout.sectionInset.right		
             + (flowLayout.minimumInteritemSpacing * CGFloat(noOfCellsInRow - 1))
         
         let size = Int((collectionView.bounds.width - totalSpace) / CGFloat(noOfCellsInRow))
@@ -59,22 +68,25 @@ class ViewController: UIViewController,UICollectionViewDelegate, UICollectionVie
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let Tcell:visitTableViewCell=customTableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as!visitTableViewCell
+        //customTableView.alpha = 0.7
         Tcell.titleLabel.text=filename[indexPath.row]
         //Tcell.timageview.layer.cornerRadius = Tcell.timageview.frame.size.width/2
         Tcell.timageView.image=UIImage(named: imagefiles[indexPath.row])
         return Tcell
     }
     
-    @IBAction func btnImage(_ sender: Any) {
-        
-        //let bimg = UIImage(named: "star") as UIImage?
-        
-        
-        
-
-        
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(indexPath.row)
+    }
+}
+extension ViewController{
+    
+    func addShadow() {
+        let shadowView = UIView(frame: CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height))
+        shadowView.backgroundColor = .black
+        shadowView.alpha = 0.7
+        self.view.insertSubview(shadowView, at: 0)
     }
     
-
 }
 

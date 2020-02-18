@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		520C697C23FBA40400F7E149 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 520C697B23FBA40400F7E149 /* Assets.xcassets */; };
 		5274219323E935EA0061D203 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274219223E935EA0061D203 /* AppDelegate.swift */; };
 		5274219523E935EA0061D203 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5274219423E935EA0061D203 /* ViewController.swift */; };
 		5274219823E935EA0061D203 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5274219623E935EA0061D203 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		527421B323E935EE0061D203 /* customCollectionTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527421B223E935EE0061D203 /* customCollectionTableViewUITests.swift */; };
 		527421C123E93C860061D203 /* recentplacecollectioncellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527421C023E93C860061D203 /* recentplacecollectioncellCollectionViewCell.swift */; };
 		527421C323E947A80061D203 /* visitTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527421C223E947A80061D203 /* visitTableViewCell.swift */; };
-		52E565AB23EABD1900A8E9AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52E565AA23EABD1900A8E9AA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		520C697B23FBA40400F7E149 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		5274218F23E935EA0061D203 /* customCollectionTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = customCollectionTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5274219223E935EA0061D203 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5274219423E935EA0061D203 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		527421B423E935EE0061D203 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527421C023E93C860061D203 /* recentplacecollectioncellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recentplacecollectioncellCollectionViewCell.swift; sourceTree = "<group>"; };
 		527421C223E947A80061D203 /* visitTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = visitTableViewCell.swift; sourceTree = "<group>"; };
-		52E565AA23EABD1900A8E9AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +104,11 @@
 				5274219223E935EA0061D203 /* AppDelegate.swift */,
 				5274219423E935EA0061D203 /* ViewController.swift */,
 				5274219623E935EA0061D203 /* Main.storyboard */,
-				52E565AA23EABD1900A8E9AA /* Assets.xcassets */,
 				527421C223E947A80061D203 /* visitTableViewCell.swift */,
 				527421C023E93C860061D203 /* recentplacecollectioncellCollectionViewCell.swift */,
 				5274219B23E935EE0061D203 /* LaunchScreen.storyboard */,
 				5274219E23E935EE0061D203 /* Info.plist */,
+				520C697B23FBA40400F7E149 /* Assets.xcassets */,
 			);
 			path = customCollectionTableView;
 			sourceTree = "<group>";
@@ -236,7 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5274219D23E935EE0061D203 /* LaunchScreen.storyboard in Resources */,
-				52E565AB23EABD1900A8E9AA /* Assets.xcassets in Resources */,
+				520C697C23FBA40400F7E149 /* Assets.xcassets in Resources */,
 				5274219823E935EA0061D203 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

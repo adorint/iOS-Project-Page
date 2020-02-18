@@ -22,11 +22,10 @@ class visitTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
-        
         tableCellContentView.layer.cornerRadius = 20
         tableCellContentView.clipsToBounds = true
-        //timageView.layer.cornerRadius = 10
-        //timageView.clipsToBounds = true
-    }
+      
+}
+    
 
 }
